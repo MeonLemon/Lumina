@@ -269,7 +269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.1782474, y: 8.940712e-16, z: -1.6195956e-16, w: 0.9839857}
+  m_LocalRotation: {x: 0.17824745, y: 0, z: 0, w: 0.9839857}
   m_LocalPosition: {x: 0, y: 6.0000005, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -413,7 +413,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 349919612}
-  m_LocalRotation: {x: 0.16036715, y: -0.00000004160136, z: 0.00000000675897, w: 0.98705745}
+  m_LocalRotation: {x: 0.16036716, y: 0.000000018988336, z: -0.0000000030850345, w: 0.98705745}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -950,8 +950,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413684180}
-  m_LocalRotation: {x: 0.29141933, y: -0.000000014254384, z: 0.0000000043424873, w: 0.9565954}
-  m_LocalPosition: {x: 0, y: 2.4530044, z: 0.9028597}
+  m_LocalRotation: {x: 0.19611613, y: -1e-45, z: -0, w: 0.9805807}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1291,8 +1291,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06873683, y: 0.05964031, z: 0.05388866}
-  m_Center: {x: -0.000983603, y: 0.0038586806, z: 0.0011892294}
+  m_Size: {x: 0.10561511, y: 0.06934451, z: 0.079266295}
+  m_Center: {x: -0.00016090869, y: 0.0017378425, z: -0.011499627}
 --- !u!114 &997639507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1895,7 +1895,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391062276}
-  m_LocalRotation: {x: 0.1782474, y: 9.086557e-16, z: -2.4247051e-16, w: 0.9839857}
+  m_LocalRotation: {x: 0.17824744, y: -1e-45, z: -0, w: 0.9839857}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2950,10 +2950,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   podiumModel: {fileID: 1186368309}
-  rotationSpeed: 83.89
-  bobSpeed: 0.5
-  bobHeight: 0.1
-  scaleSpeed: 0.5
+  rotationSpeed: 28.29
+  bobSpeed: 0.3
+  bobHeight: 0.05
+  scaleSpeed: 0.14
   scaleAmount: 0.1
 --- !u!1 &1938568421
 GameObject:
