@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8446769742814647173}
   - component: {fileID: 8446769742814647174}
   - component: {fileID: 8446769742814647175}
+  - component: {fileID: 4560501408372323241}
+  - component: {fileID: 210286170500515281}
   m_Layer: 3
   m_Name: Floor
   m_TagString: Ground
@@ -344,3 +346,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!65 &4560501408372323241
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446769742814646904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.555342, y: 3.56, z: 16.579697}
+  m_Center: {x: 0, y: 0.00000043213367, z: 0}
+--- !u!114 &210286170500515281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8446769742814646904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09891ce357b8dc644a69e2b12fd2e952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 8446769742814647173}
+  glowMaterial: {fileID: 2100000, guid: 92fdb82ca7405144f890c1cb30ce191a, type: 2}
+  material: {fileID: 2100000, guid: a519f061b5df05f43914f4ca7b91df75, type: 2}
