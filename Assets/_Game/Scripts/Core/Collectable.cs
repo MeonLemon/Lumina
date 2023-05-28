@@ -15,6 +15,20 @@ public class Collectable : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            float currentFill = DecreaseFillOverTime.Instance.currentFillAmount;
+
+            if (currentFill + 0.05f > 1.0f)
+            {
+                currentFill = 1;
+            }
+            else
+            {
+                currentFill += 0.05f;
+            }
+
+            DecreaseFillOverTime.Instance.currentFillAmount = currentFill;
+
+
             Destroy(gameObject);
         }
     }

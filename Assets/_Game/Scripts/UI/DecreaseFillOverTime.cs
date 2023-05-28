@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DecreaseFillOverTime : MonoBehaviour
+public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
 {
     public Image image;
     public float decreaseSpeed = 0.5f;
 
-    private float currentFillAmount;
+    public float currentFillAmount;
 
     private void Start()
     {
