@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     private int currentPath;
+    [SerializeField] private Animator animator;
 
     private void Start()
     {
@@ -40,11 +41,11 @@ public class PlayerController : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-
+        animator.SetTrigger("Jump");
     }
 
     private void Crouch(InputAction.CallbackContext context)
     {
-
+        animator.SetTrigger("Crouch");
     }
 }
