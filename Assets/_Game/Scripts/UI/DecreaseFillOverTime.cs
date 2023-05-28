@@ -18,6 +18,8 @@ public class DecreaseFillOverTime : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.gameState != GameState.Start) return;
+
         if (currentFillAmount > 0f)
         {
             currentFillAmount -= decreaseSpeed * Time.deltaTime;
