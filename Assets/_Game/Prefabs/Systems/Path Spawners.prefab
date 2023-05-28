@@ -53,6 +53,8 @@ MonoBehaviour:
   - {fileID: 7362724464615585659}
   m_spawnables:
   - {fileID: 5251573939356102669, guid: 9621443c831dd0e4ab9108d617fc094d, type: 3}
+  spawnDelay: 1.5
+  isSpawning: 0
 --- !u!1001 &717559370721244245
 PrefabInstance:
   m_ObjectHideFlags: 0

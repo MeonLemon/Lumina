@@ -10,4 +10,12 @@ public class Collectable : MonoBehaviour
     {
         transform.Translate(transform.forward * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }

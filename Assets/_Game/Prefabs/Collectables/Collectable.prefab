@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5251573939356102658}
   - component: {fileID: 4567955097028925471}
+  - component: {fileID: 9145433997607932124}
+  - component: {fileID: 37365615895230760}
   m_Layer: 0
   m_Name: Collectable
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5251573939356102669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.092642, y: 3.5549, z: 22.036}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46,6 +48,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -200
+--- !u!135 &9145433997607932124
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251573939356102669}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &37365615895230760
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5251573939356102669}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &5251573938271612623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81,7 +112,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 57b714af1019077438711b356b25fabd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.171
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 57b714af1019077438711b356b25fabd,
         type: 3}
