@@ -52,7 +52,8 @@ MonoBehaviour:
   - {fileID: 1851443211720884698}
   - {fileID: 7362724464615585659}
   m_spawnables:
-  - {fileID: 5251573939356102669, guid: 9621443c831dd0e4ab9108d617fc094d, type: 3}
+  - {fileID: 6672939432522432375, guid: 0faed5fe5ca361e4db4ffd68af27d02a, type: 3}
+  - {fileID: 756534007998241014, guid: 5092209cbe731c34c8306769501cd98c, type: 3}
   spawnDelay: 1.5
   isSpawning: 0
 --- !u!1001 &717559370721244245

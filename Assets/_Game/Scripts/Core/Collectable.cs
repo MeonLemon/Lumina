@@ -5,6 +5,8 @@ using UnityEngine;
 public class Collectable : MonoBehaviour
 {
     public float speed = 1;
+    public float value = 0.05f;
+
     // Update is called once per frame
     void Update()
     {
@@ -17,13 +19,13 @@ public class Collectable : MonoBehaviour
         {
             float currentFill = DecreaseFillOverTime.Instance.currentFillAmount;
 
-            if (currentFill + 0.05f > 1.0f)
+            if (currentFill + value > 1.0f)
             {
                 currentFill = 1;
             }
             else
             {
-                currentFill += 0.05f;
+                currentFill += value;
             }
 
             DecreaseFillOverTime.Instance.currentFillAmount = currentFill;

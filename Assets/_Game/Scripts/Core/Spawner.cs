@@ -20,5 +20,9 @@ public class Spawner : MonoBehaviour
         {
             var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[0], gameObject.transform);
         }
+        else
+        {
+            var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[1], gameObject.transform);
+        }
     }
 }
