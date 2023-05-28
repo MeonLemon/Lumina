@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4578710793625658858}
+  - component: {fileID: 1826035129273308321}
+  - component: {fileID: 1826035129273308320}
   m_Layer: 0
   m_Name: LuminaSphere
   m_TagString: Untagged
@@ -33,6 +35,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1826035129273308321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801330116265361232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6571965, y: 7.300937, z: 3.1474123}
+  m_Center: {x: -0.19458127, y: -1.5756409, z: -0.11098337}
+--- !u!114 &1826035129273308320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3801330116265361232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f499b4f2d9f75364fbff285c0c1cc9d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+  bobbingSpeed: 1.32
+  bobbingHeight: 1.03
+  collectSound: {fileID: 0}
+  collectEffect: {fileID: 0}
+  absorbText: {fileID: 0}
 --- !u!1 &4055412728529165042
 GameObject:
   m_ObjectHideFlags: 0
