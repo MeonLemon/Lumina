@@ -22,9 +22,165 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""Controls"",
-    ""maps"": [],
-    ""controlSchemes"": []
+    ""maps"": [
+        {
+            ""name"": ""Lumina"",
+            ""id"": ""07642d2a-062c-4267-9d19-95553705c896"",
+            ""actions"": [
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""b7b348c4-e956-4634-981d-0091ac97bf33"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""52d9eef3-e5a0-4920-8fd8-c2a9a241ced1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""c48dd02c-c2ee-482b-b6ed-94f308d85bc0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""d64edc01-2c1b-47e6-ae10-bae59043d33b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""be631edc-e01c-4ca6-b714-63961058c432"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f4c7e24e-a800-4bf4-ab69-abf28f327461"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24d09016-7537-4f0e-9c7f-b88e14679df5"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b47ff286-6b5c-49d7-847e-655af96cfa87"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d53bf022-391a-4dd8-9067-6cf7b37e3e7f"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e2f9164c-d335-4a71-b3a1-dd3e7bc00d5b"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6555b55b-9d33-4bee-aa04-0b6cc34f2fa9"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7533f0c5-6606-4f42-bc64-f36f6e173002"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
+    ""controlSchemes"": [
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
+        // Lumina
+        m_Lumina = asset.FindActionMap("Lumina", throwIfNotFound: true);
+        m_Lumina_Left = m_Lumina.FindAction("Left", throwIfNotFound: true);
+        m_Lumina_Right = m_Lumina.FindAction("Right", throwIfNotFound: true);
+        m_Lumina_Jump = m_Lumina.FindAction("Jump", throwIfNotFound: true);
+        m_Lumina_Crouch = m_Lumina.FindAction("Crouch", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -79,5 +235,78 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     public int FindBinding(InputBinding bindingMask, out InputAction action)
     {
         return asset.FindBinding(bindingMask, out action);
+    }
+
+    // Lumina
+    private readonly InputActionMap m_Lumina;
+    private ILuminaActions m_LuminaActionsCallbackInterface;
+    private readonly InputAction m_Lumina_Left;
+    private readonly InputAction m_Lumina_Right;
+    private readonly InputAction m_Lumina_Jump;
+    private readonly InputAction m_Lumina_Crouch;
+    public struct LuminaActions
+    {
+        private @Controls m_Wrapper;
+        public LuminaActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Left => m_Wrapper.m_Lumina_Left;
+        public InputAction @Right => m_Wrapper.m_Lumina_Right;
+        public InputAction @Jump => m_Wrapper.m_Lumina_Jump;
+        public InputAction @Crouch => m_Wrapper.m_Lumina_Crouch;
+        public InputActionMap Get() { return m_Wrapper.m_Lumina; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(LuminaActions set) { return set.Get(); }
+        public void SetCallbacks(ILuminaActions instance)
+        {
+            if (m_Wrapper.m_LuminaActionsCallbackInterface != null)
+            {
+                @Left.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnLeft;
+                @Left.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnLeft;
+                @Left.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnLeft;
+                @Right.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnRight;
+                @Right.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnRight;
+                @Right.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnRight;
+                @Jump.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnJump;
+                @Crouch.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
+                @Crouch.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
+                @Crouch.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
+            }
+            m_Wrapper.m_LuminaActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Left.started += instance.OnLeft;
+                @Left.performed += instance.OnLeft;
+                @Left.canceled += instance.OnLeft;
+                @Right.started += instance.OnRight;
+                @Right.performed += instance.OnRight;
+                @Right.canceled += instance.OnRight;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Crouch.started += instance.OnCrouch;
+                @Crouch.performed += instance.OnCrouch;
+                @Crouch.canceled += instance.OnCrouch;
+            }
+        }
+    }
+    public LuminaActions @Lumina => new LuminaActions(this);
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
+        {
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
+    public interface ILuminaActions
+    {
+        void OnLeft(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnCrouch(InputAction.CallbackContext context);
     }
 }
