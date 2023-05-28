@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class PathNodes : Singleton<PathNodes>
 {
-    [SerializeField] Transform[] m_nodes;
+   public Transform[] m_nodes;
 }

@@ -306,9 +306,21 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Lumina
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &363869966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363869963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41147b27525c71a4b8f55feef6fd35e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1451398415
 Mesh:
   m_ObjectHideFlags: 0
