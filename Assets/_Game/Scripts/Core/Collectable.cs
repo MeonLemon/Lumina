@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
+    public CollectableType type;
     public float speed = 1;
     public float value = 0.05f;
 
@@ -35,6 +36,20 @@ public class Collectable : MonoBehaviour
 
             DecreaseFillOverTime.Instance.currentFillAmount = currentFill;
 
+            switch(type)
+            {
+                case CollectableType.Good:
+                    AudioManager.Instance.collectEvent.Invoke();
+                    break;
+                case CollectableType.Bad:
+                    AudioManager.Instance.collectBadEvent.Invoke();
+                    break;
+                case CollectableType.SuperBad:
+                    AudioManager.Instance.CollectSuperBadEvent.Invoke();
+                    break;
+                default:
+                    break;
+            }
 
             Destroy(gameObject);
         }

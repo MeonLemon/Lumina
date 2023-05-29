@@ -2819,6 +2819,136 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8995397115623058950}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8995397115623058949}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Randomize
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8995397115623058948}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 8995397115623058947}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Randomize
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RandomizePitch, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RandomizePitch, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: collectBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6676774180609810182, guid: 31793bb024861224bbda49ef366b4e6a,
+        type: 3}
+      propertyPath: CollectSuperBadEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31793bb024861224bbda49ef366b4e6a, type: 3}
 --- !u!82 &8995397115623058946 stripped
@@ -2827,6 +2957,42 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 8995397115623058945}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &8995397115623058947 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2229544704844890277, guid: 31793bb024861224bbda49ef366b4e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8995397115623058945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8995397115623058948 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4578262416536440952, guid: 31793bb024861224bbda49ef366b4e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8995397115623058945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c9ca88d3dae5f4ca854992e44ce4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &8995397115623058949 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5029167035570340299, guid: 31793bb024861224bbda49ef366b4e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8995397115623058945}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8995397115623058950 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6065996426040213349, guid: 31793bb024861224bbda49ef366b4e6a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8995397115623058945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c9ca88d3dae5f4ca854992e44ce4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9129719784944651468
 PrefabInstance:
   m_ObjectHideFlags: 0
