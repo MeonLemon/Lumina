@@ -28,6 +28,7 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
 
         if(currentFillAmount < 0f)
         {
+            image.fillAmount = 0f;
             GameManager.Instance.gameState = GameState.End;
         }
     }
