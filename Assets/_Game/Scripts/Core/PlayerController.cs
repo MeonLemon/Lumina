@@ -60,26 +60,22 @@ public class PlayerController : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        animator.SetTrigger("Jump");
-
         if (!inverted)
         {
             gameObject.transform.position = PathNodes.Instance.m_nodes[currentPath += 3].position;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 180f);
             inverted = true;
         }
-        else
+    }
+
+    private void Crouch(InputAction.CallbackContext context)
+    {
+        if(inverted)
         {
             gameObject.transform.position = PathNodes.Instance.m_nodes[currentPath -= 3].position;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             inverted = false;
         }
-
-    }
-
-    private void Crouch(InputAction.CallbackContext context)
-    {
-        animator.SetTrigger("Crouch");
     }
 
     private void Ability(InputAction.CallbackContext context)
