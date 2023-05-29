@@ -30,4 +30,10 @@ public class GameManager : Singleton<GameManager>
         yield return new WaitForSeconds(5);
         endEvent.Invoke();
     }
+
+    public void SaveScore(float score)
+    {
+        PlayerPrefs.SetFloat("HighScore", score);
+        PlayerPrefs.Save();
+    }
 }

@@ -4,12 +4,15 @@ using TMPro;
 public class ScoreTimer : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI highScore;
+
     private float timerValue;
 
     private void Start()
     {
         // Initialize timer values
         timerValue = 0f;
+        highScore.text = FormatTime(PlayerPrefs.GetFloat("HighScore"));
     }
 
     private void Update()
@@ -21,6 +24,14 @@ public class ScoreTimer : MonoBehaviour
 
             // Update TextMeshPro text
             timerText.text = FormatTime(timerValue);
+        }
+
+        if(GameManager.Instance.gameState == GameState.End)
+        {
+            if (PlayerPrefs.GetFloat("HighScore") < timerValue)
+            {
+                GameManager.Instance.SaveScore(timerValue);
+            } 
         }
     }
 
