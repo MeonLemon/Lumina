@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.PlayerControls.Lumina.Right.performed += MoveRight;
         InputManager.Instance.PlayerControls.Lumina.Jump.performed += Jump;
         InputManager.Instance.PlayerControls.Lumina.Crouch.performed += Crouch;
-        InputManager.Instance.PlayerControls.Lumina.Gravity.performed += Gravity;
+        InputManager.Instance.PlayerControls.Lumina.Ability.performed += Ability;
     }
 
     private void OnDisable()
@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.PlayerControls.Lumina.Right.performed -= MoveRight;
         InputManager.Instance.PlayerControls.Lumina.Jump.performed -= Jump;
         InputManager.Instance.PlayerControls.Lumina.Crouch.performed -= Crouch;
-        InputManager.Instance.PlayerControls.Lumina.Gravity.performed -= Gravity;
+        InputManager.Instance.PlayerControls.Lumina.Ability.performed -= Ability;
     }
 
     private void MoveLeft(InputAction.CallbackContext context)
@@ -61,19 +61,11 @@ public class PlayerController : MonoBehaviour
     private void Jump(InputAction.CallbackContext context)
     {
         animator.SetTrigger("Jump");
-    }
 
-    private void Crouch(InputAction.CallbackContext context)
-    {
-        animator.SetTrigger("Crouch");
-    }
-
-    private void Gravity(InputAction.CallbackContext context)
-    {
-        if(!inverted)
+        if (!inverted)
         {
             gameObject.transform.position = PathNodes.Instance.m_nodes[currentPath += 3].position;
-            gameObject.transform.rotation = Quaternion.Euler(0,0,180f);
+            gameObject.transform.rotation = Quaternion.Euler(0, 0, 180f);
             inverted = true;
         }
         else
@@ -82,6 +74,16 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             inverted = false;
         }
+
+    }
+
+    private void Crouch(InputAction.CallbackContext context)
+    {
+        animator.SetTrigger("Crouch");
+    }
+
+    private void Ability(InputAction.CallbackContext context)
+    {
         
     }
 }

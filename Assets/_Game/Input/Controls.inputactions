@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Gravity",
+                    "name": "Ability",
                     "type": "Button",
                     "id": "66a6c753-f86a-4e8b-84b0-0a62546719cc",
                     "expectedControlType": "Button",
@@ -147,7 +147,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Gravity",
+                    "action": "Ability",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

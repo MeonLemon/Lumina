@@ -64,7 +64,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Gravity"",
+                    ""name"": ""Ability"",
                     ""type"": ""Button"",
                     ""id"": ""66a6c753-f86a-4e8b-84b0-0a62546719cc"",
                     ""expectedControlType"": ""Button"",
@@ -169,7 +169,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard"",
-                    ""action"": ""Gravity"",
+                    ""action"": ""Ability"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -201,7 +201,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Lumina_Right = m_Lumina.FindAction("Right", throwIfNotFound: true);
         m_Lumina_Jump = m_Lumina.FindAction("Jump", throwIfNotFound: true);
         m_Lumina_Crouch = m_Lumina.FindAction("Crouch", throwIfNotFound: true);
-        m_Lumina_Gravity = m_Lumina.FindAction("Gravity", throwIfNotFound: true);
+        m_Lumina_Ability = m_Lumina.FindAction("Ability", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -265,7 +265,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Lumina_Right;
     private readonly InputAction m_Lumina_Jump;
     private readonly InputAction m_Lumina_Crouch;
-    private readonly InputAction m_Lumina_Gravity;
+    private readonly InputAction m_Lumina_Ability;
     public struct LuminaActions
     {
         private @Controls m_Wrapper;
@@ -274,7 +274,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Right => m_Wrapper.m_Lumina_Right;
         public InputAction @Jump => m_Wrapper.m_Lumina_Jump;
         public InputAction @Crouch => m_Wrapper.m_Lumina_Crouch;
-        public InputAction @Gravity => m_Wrapper.m_Lumina_Gravity;
+        public InputAction @Ability => m_Wrapper.m_Lumina_Ability;
         public InputActionMap Get() { return m_Wrapper.m_Lumina; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -296,9 +296,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Crouch.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
                 @Crouch.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
                 @Crouch.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnCrouch;
-                @Gravity.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnGravity;
-                @Gravity.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnGravity;
-                @Gravity.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnGravity;
+                @Ability.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
+                @Ability.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
+                @Ability.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
             }
             m_Wrapper.m_LuminaActionsCallbackInterface = instance;
             if (instance != null)
@@ -315,9 +315,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Crouch.started += instance.OnCrouch;
                 @Crouch.performed += instance.OnCrouch;
                 @Crouch.canceled += instance.OnCrouch;
-                @Gravity.started += instance.OnGravity;
-                @Gravity.performed += instance.OnGravity;
-                @Gravity.canceled += instance.OnGravity;
+                @Ability.started += instance.OnAbility;
+                @Ability.performed += instance.OnAbility;
+                @Ability.canceled += instance.OnAbility;
             }
         }
     }
@@ -337,6 +337,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnRight(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
-        void OnGravity(InputAction.CallbackContext context);
+        void OnAbility(InputAction.CallbackContext context);
     }
 }
