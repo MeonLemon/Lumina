@@ -11,6 +11,12 @@ public class GameManager : Singleton<GameManager>
     public UnityEvent unpauseEvent;
 
     [SerializeField] private UnityEvent startEvent;
+
+    public void Start()
+    {
+        Time.timeScale = 1.0f;
+    }
+
     public void GameStart()
     {
         startEvent.Invoke();
