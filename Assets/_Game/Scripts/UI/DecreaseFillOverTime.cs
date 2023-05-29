@@ -32,4 +32,16 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
             GameManager.Instance.gameState = GameState.End;
         }
     }
+
+    public void ChangeColor(bool inverted)
+    {
+        if(!inverted)
+        {
+            image.color = HexColor.ToColor("#FFDE00");
+        }
+        else
+        {
+            image.color = HexColor.ToColor("#00EBFF");
+        }
+    }
 }

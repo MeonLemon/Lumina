@@ -64,6 +64,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.position = PathNodes.Instance.m_nodes[currentPath += 3].position;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 180f);
+            DecreaseFillOverTime.Instance.ChangeColor(true);
             inverted = true;
         }
     }
@@ -74,6 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.transform.position = PathNodes.Instance.m_nodes[currentPath -= 3].position;
             gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+            DecreaseFillOverTime.Instance.ChangeColor(false);
             inverted = false;
         }
     }
