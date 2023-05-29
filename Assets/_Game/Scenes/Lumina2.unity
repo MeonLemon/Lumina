@@ -1857,11 +1857,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5653532533129265916, guid: 27bc14cc415a56945b47c365403499b0,
         type: 3}
-      propertyPath: invertDelay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5653532533129265916, guid: 27bc14cc415a56945b47c365403499b0,
-        type: 3}
       propertyPath: m_spawnables.Array.size
       value: 2
       objectReference: {fileID: 0}
