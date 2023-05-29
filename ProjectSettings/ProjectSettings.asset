@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: AnxiousPixelBread
-  productName: Lumina
+  productName: Lumina Rush
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.12530091, g: 0.10969206, b: 0.2735849, a: 1}
