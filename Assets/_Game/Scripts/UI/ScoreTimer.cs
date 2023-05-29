@@ -31,6 +31,7 @@ public class ScoreTimer : MonoBehaviour
             if (PlayerPrefs.GetFloat("HighScore") < timerValue)
             {
                 GameManager.Instance.SaveScore(timerValue);
+                highScore.text = FormatTime(PlayerPrefs.GetFloat("HighScore"));
             } 
         }
     }
