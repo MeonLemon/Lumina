@@ -37,11 +37,11 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
     {
         if(!inverted)
         {
-            image.color = HexColor.ToColor("#FFDE00");
+            image.color = HexColor.ToColor("#00C6FF");
         }
         else
         {
-            image.color = HexColor.ToColor("#00EBFF");
+            image.color = HexColor.ToColor("#FF0E00");
         }
     }
 }
