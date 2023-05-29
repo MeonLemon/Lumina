@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -200
+  value: 0.05
 --- !u!135 &9145433997607932124
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -158,12 +159,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: acd6c3072e44b00498732083e7403a17, type: 2}
+      objectReference: {fileID: 2100000, guid: 2d1bd592adb1f644ab132a91eab460c7, type: 2}
     - target: {fileID: -1377349001386170591, guid: 57b714af1019077438711b356b25fabd,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1553e0dff7ae0e544a4320f2d0d30c98, type: 2}
+      objectReference: {fileID: 2100000, guid: 2d1bd592adb1f644ab132a91eab460c7, type: 2}
     - target: {fileID: 919132149155446097, guid: 57b714af1019077438711b356b25fabd,
         type: 3}
       propertyPath: m_Name
@@ -173,7 +174,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4a79a0f834fb7dc4e8f46c9c10bcd71e, type: 2}
+      objectReference: {fileID: 2100000, guid: 2d1bd592adb1f644ab132a91eab460c7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57b714af1019077438711b356b25fabd, type: 3}
 --- !u!1 &263809078797327735 stripped

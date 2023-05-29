@@ -44,6 +44,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3730561676181019523}
     m_Modifications:
+    - target: {fileID: 210286170500515281, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e26329298f2f94642b4543bf830ab3eb, type: 2}
     - target: {fileID: 8446769742814646904, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Name
@@ -119,6 +124,11 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 4117
       objectReference: {fileID: 0}
+    - target: {fileID: 8446769742814647173, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebbb50ee6fceb4f49aa0be1e70297403, type: 2}
     - target: {fileID: 8446769742814647174, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Mesh
@@ -144,6 +154,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3730561676181019523}
     m_Modifications:
+    - target: {fileID: 210286170500515281, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e26329298f2f94642b4543bf830ab3eb, type: 2}
     - target: {fileID: 8446769742814646904, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Name
@@ -219,6 +234,11 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 4117
       objectReference: {fileID: 0}
+    - target: {fileID: 8446769742814647173, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebbb50ee6fceb4f49aa0be1e70297403, type: 2}
     - target: {fileID: 8446769742814647174, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Mesh
@@ -344,6 +364,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3730561676181019523}
     m_Modifications:
+    - target: {fileID: 210286170500515281, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: glowMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e26329298f2f94642b4543bf830ab3eb, type: 2}
     - target: {fileID: 8446769742814646904, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Name
@@ -419,6 +444,11 @@ PrefabInstance:
       propertyPath: m_VersionIndex
       value: 4114
       objectReference: {fileID: 0}
+    - target: {fileID: 8446769742814647173, guid: f874127b284591f4e83aedf93dba40f4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ebbb50ee6fceb4f49aa0be1e70297403, type: 2}
     - target: {fileID: 8446769742814647174, guid: f874127b284591f4e83aedf93dba40f4,
         type: 3}
       propertyPath: m_Mesh
