@@ -36,7 +36,7 @@ public class WobbleText : MonoBehaviour
             for (int j = 0; j < 4; ++j)
             {
                 var orig = verts[charInfo.vertexIndex + j];
-                verts[charInfo.vertexIndex + j] = orig + new Vector3(0, Mathf.Sin(Time.time * m_speed + orig.x * m_pos) * m_wave, 0);
+                verts[charInfo.vertexIndex + j] = orig + new Vector3(0, Mathf.Sin(Time.unscaledTime * m_speed + orig.x * m_pos) * m_wave, 0);
 
             }
         }

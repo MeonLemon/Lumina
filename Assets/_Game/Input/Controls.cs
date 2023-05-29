@@ -71,6 +71,15 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""7136fbf6-4413-45be-9340-8bc9f90a1b25"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -172,6 +181,17 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                     ""action"": ""Ability"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3751139c-1d38-408b-87fc-3759e6914739"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -202,6 +222,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         m_Lumina_Jump = m_Lumina.FindAction("Jump", throwIfNotFound: true);
         m_Lumina_Crouch = m_Lumina.FindAction("Crouch", throwIfNotFound: true);
         m_Lumina_Ability = m_Lumina.FindAction("Ability", throwIfNotFound: true);
+        m_Lumina_Pause = m_Lumina.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -266,6 +287,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
     private readonly InputAction m_Lumina_Jump;
     private readonly InputAction m_Lumina_Crouch;
     private readonly InputAction m_Lumina_Ability;
+    private readonly InputAction m_Lumina_Pause;
     public struct LuminaActions
     {
         private @Controls m_Wrapper;
@@ -275,6 +297,7 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Lumina_Jump;
         public InputAction @Crouch => m_Wrapper.m_Lumina_Crouch;
         public InputAction @Ability => m_Wrapper.m_Lumina_Ability;
+        public InputAction @Pause => m_Wrapper.m_Lumina_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Lumina; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -299,6 +322,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Ability.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
                 @Ability.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
                 @Ability.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnAbility;
+                @Pause.started -= m_Wrapper.m_LuminaActionsCallbackInterface.OnPause;
+                @Pause.performed -= m_Wrapper.m_LuminaActionsCallbackInterface.OnPause;
+                @Pause.canceled -= m_Wrapper.m_LuminaActionsCallbackInterface.OnPause;
             }
             m_Wrapper.m_LuminaActionsCallbackInterface = instance;
             if (instance != null)
@@ -318,6 +344,9 @@ public partial class @Controls : IInputActionCollection2, IDisposable
                 @Ability.started += instance.OnAbility;
                 @Ability.performed += instance.OnAbility;
                 @Ability.canceled += instance.OnAbility;
+                @Pause.started += instance.OnPause;
+                @Pause.performed += instance.OnPause;
+                @Pause.canceled += instance.OnPause;
             }
         }
     }
@@ -338,5 +367,6 @@ public partial class @Controls : IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
         void OnAbility(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }

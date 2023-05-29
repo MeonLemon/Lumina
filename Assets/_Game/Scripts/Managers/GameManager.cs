@@ -7,6 +7,8 @@ public class GameManager : Singleton<GameManager>
 {
     public GameState gameState;
     public UnityEvent endEvent;
+    public UnityEvent pauseEvent;
+    public UnityEvent unpauseEvent;
 
     [SerializeField] private UnityEvent startEvent;
     public void GameStart()

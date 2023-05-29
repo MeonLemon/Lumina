@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.PlayerControls.Lumina.Jump.performed += Jump;
         InputManager.Instance.PlayerControls.Lumina.Crouch.performed += Crouch;
         InputManager.Instance.PlayerControls.Lumina.Ability.performed += Ability;
+        InputManager.Instance.PlayerControls.Lumina.Pause.performed += Pause;
     }
 
     private void OnDisable()
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.PlayerControls.Lumina.Jump.performed -= Jump;
         InputManager.Instance.PlayerControls.Lumina.Crouch.performed -= Crouch;
         InputManager.Instance.PlayerControls.Lumina.Ability.performed -= Ability;
+        InputManager.Instance.PlayerControls.Lumina.Pause.performed -= Pause;
     }
 
     private void MoveLeft(InputAction.CallbackContext context)
@@ -83,5 +85,24 @@ public class PlayerController : MonoBehaviour
     private void Ability(InputAction.CallbackContext context)
     {
         
+    }
+
+    private void Pause(InputAction.CallbackContext context)
+    {
+        if(GameManager.Instance.gameState == GameState.Start)
+        {
+            GameManager.Instance.gameState = GameState.Paused;
+            Time.timeScale = 0.0f;
+            GameManager.Instance.pauseEvent.Invoke();
+            return;
+        }
+        
+        if(GameManager.Instance.gameState == GameState.Paused)
+        {
+            GameManager.Instance.gameState = GameState.Start;
+            Time.timeScale = 1.0f;
+            GameManager.Instance.unpauseEvent.Invoke();
+            return;
+        }
     }
 }
