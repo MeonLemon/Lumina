@@ -62,8 +62,10 @@ MonoBehaviour:
   - {fileID: 6672939432522432375, guid: 0faed5fe5ca361e4db4ffd68af27d02a, type: 3}
   - {fileID: 756534007998241014, guid: 5092209cbe731c34c8306769501cd98c, type: 3}
   spawnDelay: 1.5
+  invertDelay: 5
   isSpawning: 0
   isInvert: 0
+  isInverting: 0
 --- !u!1001 &428442610696229047
 PrefabInstance:
   m_ObjectHideFlags: 0

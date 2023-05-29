@@ -9,11 +9,19 @@ public class PathSpawners : Singleton<PathSpawners>
 
     public GameObject[] m_spawnables;
     public float spawnDelay = 1.5f;
+    public float invertDelay = 30f;
     public bool isSpawning;
     public bool isInvert;
 
+    public bool isInverting;
+
     private void Update()
     {
+        if(!isInverting)
+        {
+            StartCoroutine(Inverter(!isInvert));
+        }
+
         if(!isInvert)
         {
             if (GameManager.Instance.gameState == GameState.Start)
@@ -34,7 +42,6 @@ public class PathSpawners : Singleton<PathSpawners>
                         StartCoroutine(IsSpawning());
                         s.SpawnCollectable(false);
                     }
-
                 }
             }
         }
@@ -70,5 +77,13 @@ public class PathSpawners : Singleton<PathSpawners>
         isSpawning = true;
         yield return new WaitForSeconds(spawnDelay);
         isSpawning = false;
+    }
+
+    private IEnumerator Inverter(bool invert)
+    {
+        isInverting = true;
+        yield return new WaitForSeconds(invertDelay);
+        isInvert = invert;
+        isInverting = false;
     }
 }
