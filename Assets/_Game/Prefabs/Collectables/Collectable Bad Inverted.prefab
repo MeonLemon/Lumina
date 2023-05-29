@@ -25,12 +25,12 @@ PrefabInstance:
     - target: {fileID: 4567955097028925471, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
       propertyPath: speed
-      value: -250
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 4567955097028925471, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
       propertyPath: value
-      value: -0.3
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 5251573939356102658, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
@@ -90,7 +90,7 @@ PrefabInstance:
     - target: {fileID: 5251573939356102669, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
       propertyPath: m_Name
-      value: Collectable Bad
+      value: Collectable Bad Inverted
       objectReference: {fileID: 0}
     - target: {fileID: 8402188142770039387, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}

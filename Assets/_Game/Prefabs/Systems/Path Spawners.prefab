@@ -61,8 +61,10 @@ MonoBehaviour:
   m_spawnables:
   - {fileID: 6672939432522432375, guid: 0faed5fe5ca361e4db4ffd68af27d02a, type: 3}
   - {fileID: 756534007998241014, guid: 5092209cbe731c34c8306769501cd98c, type: 3}
+  - {fileID: 6672939432522432375, guid: aa55aa2944ef5354b93706e8beb6440b, type: 3}
+  - {fileID: 756534007998241014, guid: 56d67c036e5b8ad4b98c94949ca18547, type: 3}
   spawnDelay: 1.5
-  invertDelay: 5
+  invertDelay: 10
   isSpawning: 0
   isInvert: 0
   isInverting: 0

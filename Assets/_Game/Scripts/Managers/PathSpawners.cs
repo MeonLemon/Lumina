@@ -58,12 +58,12 @@ public class PathSpawners : Singleton<PathSpawners>
                     if ((int)s.type == randomVal)
                     {
                         StartCoroutine(IsSpawning());
-                        s.SpawnCollectable(true);
+                        s.SpawnCollectableInvert(false);
                     }
                     else
                     {
                         StartCoroutine(IsSpawning());
-                        s.SpawnCollectable(false);
+                        s.SpawnCollectableInvert(true);
                     }
 
                 }

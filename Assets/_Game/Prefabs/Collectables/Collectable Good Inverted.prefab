@@ -1,27 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &4800530441049745659
+--- !u!1001 &1475594784125407098
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 37365615895230760, guid: 9621443c831dd0e4ab9108d617fc094d,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1783248487141350803, guid: 9621443c831dd0e4ab9108d617fc094d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f1975b22b2286dc4ea8057abfbcd3e56, type: 2}
-    - target: {fileID: 2595193569857997294, guid: 9621443c831dd0e4ab9108d617fc094d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: f1975b22b2286dc4ea8057abfbcd3e56, type: 2}
     - target: {fileID: 4567955097028925471, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
       propertyPath: speed
@@ -90,12 +75,7 @@ PrefabInstance:
     - target: {fileID: 5251573939356102669, guid: 9621443c831dd0e4ab9108d617fc094d,
         type: 3}
       propertyPath: m_Name
-      value: Collectable Bad
+      value: Collectable Good Inverted
       objectReference: {fileID: 0}
-    - target: {fileID: 8402188142770039387, guid: 9621443c831dd0e4ab9108d617fc094d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5522bf6b201c322448466cac147677ed, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9621443c831dd0e4ab9108d617fc094d, type: 3}

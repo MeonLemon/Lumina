@@ -11,6 +11,11 @@ public class Spawner : MonoBehaviour
         StartCoroutine(Spawn(isGood));
     }
 
+    public void SpawnCollectableInvert(bool isGood = false)
+    {
+        StartCoroutine(SpawnInvert(isGood));
+    }
+
     private IEnumerator Spawn(bool isGood)
     {
         yield return new WaitForSeconds(spawnDelay);
@@ -23,6 +28,21 @@ public class Spawner : MonoBehaviour
         else
         {
             var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[1], gameObject.transform);
+        }
+    }
+
+    private IEnumerator SpawnInvert(bool isGood)
+    {
+        yield return new WaitForSeconds(spawnDelay);
+        Debug.Log($"Type: {type} / {isGood}");
+
+        if (isGood)
+        {
+            var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[2], gameObject.transform);
+        }
+        else
+        {
+            var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[3], gameObject.transform);
         }
     }
 }
