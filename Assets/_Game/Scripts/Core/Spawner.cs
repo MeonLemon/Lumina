@@ -16,13 +16,19 @@ public class Spawner : MonoBehaviour
         StartCoroutine(SpawnInvert(isGood));
     }
 
+    public void SpawnCollectableObstacle()
+    {
+        StartCoroutine(SpawnObstacle());
+    }
+
     private IEnumerator Spawn(bool isGood)
     {
         yield return new WaitForSeconds(spawnDelay);
         Debug.Log($"Type: {type} / {isGood}");
 
-        if(isGood)
+        if (isGood)
         {
+
             var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[0], gameObject.transform);
         }
         else
@@ -44,5 +50,11 @@ public class Spawner : MonoBehaviour
         {
             var spawnedObj = Instantiate(PathSpawners.Instance.m_spawnables[3], gameObject.transform);
         }
+    }
+
+    private IEnumerator SpawnObstacle()
+    {
+        yield return new WaitForSeconds(spawnDelay);
+        var spawnObj = Instantiate(PathSpawners.Instance.m_spawnables[4], gameObject.transform);
     }
 }

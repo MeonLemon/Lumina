@@ -63,6 +63,7 @@ MonoBehaviour:
   - {fileID: 756534007998241014, guid: 5092209cbe731c34c8306769501cd98c, type: 3}
   - {fileID: 6672939432522432375, guid: aa55aa2944ef5354b93706e8beb6440b, type: 3}
   - {fileID: 756534007998241014, guid: 56d67c036e5b8ad4b98c94949ca18547, type: 3}
+  - {fileID: 756534007998241014, guid: 9a51722d9ebaf594495a43c35dfe714c, type: 3}
   spawnDelay: 1.5
   invertDelay: 10
   isSpawning: 0

@@ -28,21 +28,30 @@ public class PathSpawners : Singleton<PathSpawners>
             {
                 if (isSpawning) return;
                 int randomVal = Random.Range(1, 4);
+                var randomInt = Random.Range(0, 11);
                 foreach (Spawner s in m_spawners)
                 {
                     Debug.Log($"Random Value: {randomVal}");
 
-                    if ((int)s.type == randomVal)
+                    if(randomInt == 5)
                     {
-                        StartCoroutine(IsSpawning());
-                        s.SpawnCollectable(true);
+                        s.SpawnCollectableObstacle();
                     }
                     else
                     {
-                        StartCoroutine(IsSpawning());
-                        s.SpawnCollectable(false);
+                        if ((int)s.type == randomVal)
+                        {
+                            StartCoroutine(IsSpawning());
+                            s.SpawnCollectable(true);
+                        }
+                        else
+                        {
+                            StartCoroutine(IsSpawning());
+                            s.SpawnCollectable(false);
+                        }
                     }
                 }
+                    
             }
         }
         else
@@ -51,21 +60,28 @@ public class PathSpawners : Singleton<PathSpawners>
             {
                 if (isSpawning) return;
                 int randomVal = Random.Range(1, 4);
+                var randomInt = Random.Range(0, 11);
                 foreach (Spawner s in m_invertSpawner)
                 {
                     Debug.Log($"Random Value: {randomVal}");
 
-                    if ((int)s.type == randomVal)
+                    if (randomInt == 5)
                     {
-                        StartCoroutine(IsSpawning());
-                        s.SpawnCollectableInvert(false);
+                        s.SpawnCollectableObstacle();
                     }
                     else
                     {
-                        StartCoroutine(IsSpawning());
-                        s.SpawnCollectableInvert(true);
+                        if ((int)s.type == randomVal)
+                        {
+                            StartCoroutine(IsSpawning());
+                            s.SpawnCollectableInvert(false);
+                        }
+                        else
+                        {
+                            StartCoroutine(IsSpawning());
+                            s.SpawnCollectableInvert(true);
+                        }
                     }
-
                 }
             }
         }
