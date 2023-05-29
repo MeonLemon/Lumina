@@ -11,6 +11,11 @@ public class Collectable : MonoBehaviour
     void Update()
     {
         transform.Translate(transform.forward * speed * Time.deltaTime);
+
+        if(GameManager.Instance.gameState == GameState.End)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)

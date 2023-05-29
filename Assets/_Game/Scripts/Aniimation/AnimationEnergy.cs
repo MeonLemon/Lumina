@@ -12,9 +12,14 @@ public class AnimationEnergy : MonoBehaviour
 
         myAnimator.speed = currentFill;
 
-        if(currentFill <= 0)
+        if(currentFill >= 0.7f)
         {
-            myAnimator.speed = 0.1f;
+            myAnimator.speed = 2f;
+        }
+
+        if(currentFill <= 0.3f)
+        {
+            myAnimator.speed = 0.3f;
         }
 
         /*
