@@ -8,6 +8,8 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
 
     public float currentFillAmount;
 
+    public bool gameIsEnding;
+
     private void Start()
     {
         if (image == null)
@@ -18,8 +20,6 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
 
     private void Update()
     {
-        if (GameManager.Instance.gameState != GameState.Start) return;
-
         if (currentFillAmount > 0f)
         {
             currentFillAmount -= decreaseSpeed * Time.deltaTime;
@@ -30,6 +30,11 @@ public class DecreaseFillOverTime : Singleton<DecreaseFillOverTime>
         {
             image.fillAmount = 0f;
             GameManager.Instance.gameState = GameState.End;
+            if(!gameIsEnding)
+            {
+                gameIsEnding = true;
+                GameManager.Instance.StartCoroutine("EndGame");
+            }
         }
     }
 

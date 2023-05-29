@@ -1,9 +1,12 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
     public GameState gameState;
+    public UnityEvent endEvent;
 
     [SerializeField] private UnityEvent startEvent;
     public void GameStart()
@@ -15,5 +18,16 @@ public class GameManager : Singleton<GameManager>
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void ReloadGame()
+    {
+        SceneManager.LoadScene("Lumina2");
+    }
+
+    public IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(5);
+        endEvent.Invoke();
     }
 }

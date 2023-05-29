@@ -8,6 +8,7 @@ public class LightEnergy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.gameState != GameState.Start) return;
         float currentFill = DecreaseFillOverTime.Instance.currentFillAmount;
 
         myLight.intensity = currentFill;

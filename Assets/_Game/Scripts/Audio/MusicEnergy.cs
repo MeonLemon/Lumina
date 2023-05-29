@@ -8,6 +8,7 @@ public class MusicEnergy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.gameState != GameState.Start) return;
         float currentFill = DecreaseFillOverTime.Instance.currentFillAmount;
 
         if (currentFill >= 0.5f)
