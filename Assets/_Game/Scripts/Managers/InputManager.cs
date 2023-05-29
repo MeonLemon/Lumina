@@ -8,13 +8,20 @@ public class InputManager : Singleton<InputManager>
         PlayerControls = new Controls();
     }
 
-    private void OnEnable()
-    {
-        PlayerControls.Enable();
-    }
-
     private void OnDisable()
     {
         PlayerControls.Disable();
+    }
+
+    public void ToggleControls(bool toggle)
+    {
+        if(toggle)
+        {
+            PlayerControls.Enable();
+        }
+        else
+        {
+            PlayerControls.Disable();
+        }
     }
 }
